@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chat Widget</title>
+    <style>
+      #chat-widget {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 300px;
+        height: 400px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        overflow: hidden;
+        background-color: white;
+        opacity: 0.8; /* Adjust the opacity value as needed */
+      }
+
+      #chat-messages {
+        height: 320px;
+        overflow-y: scroll;
+      }
+
+      #chat-input {
+        width: 100%;
+        padding: 10px;
+        border: none;
+      }
+
+      #toggle-button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        border: none;
+        background-color: #ccc;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <p>
+        Phasellus sed magna consectetur, gravida tellus id, sollicitudin
+        metus.Phasellus sed magna consectetur, gravida tellus id, sollicitudin
+        metus.Phasellus sed magna consectetur, gravida tellus id, sollicitudin
+        metus.Phasellus sed magna consectetur, gravida tellus id, sollicitudin
+        metus.Phasellus sed magna consectetur, gravida tellus id, sollicitudin
+        metus.Phasellus sed magna consectetur, gravida tellus id, sollicitudin
+        metus.Phasellus sed magna consectetur, gravida tellus id, sollicitudin
+        metus.Phasellus sed magna consectetur, gravida tellus id, sollicitudin
+        metus.Phasellus sed magna consectetur, gravida tellus id, sollicitudin
+        metus.Phasellus sed magna consectetur, gravida tellus id, sollicitudin
+        metus.Phasellus sed magna consectetur, gravida tellus id, sollicitudin
+        metus.Phasellus sed magna consectetur, gravida tellus id, sollicitudin
+        metus.Phasellus sed magna consectetur, gravida tellus id, sollicitudin
+        metus.
+      </p>
+      <p>
+        Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.
+      </p>
+      <p>
+        Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.
+      </p>
+      <p>
+        Praesent vulputate sem a libero ultricies, vel vestibulum dolor
+        tincidunt.Praesent vulputate sem a libero ultricies, vel vestibulum
+        dolor tincidunt.Praesent vulputate sem a libero ultricies, vel
+        vestibulum dolor tincidunt.Praesent vulputate sem a libero ultricies,
+        vel vestibulum dolor tincidunt.Praesent vulputate sem a libero
+        ultricies, vel vestibulum dolor tincidunt.Praesent vulputate sem a
+        libero ultricies, vel vestibulum dolor tincidunt.Praesent vulputate sem
+        a libero ultricies, vel vestibulum dolor tincidunt.Praesent vulputate
+        sem a libero ultricies, vel vestibulum dolor tincidunt.Praesent
+        vulputate sem a libero ultricies, vel vestibulum dolor
+        tincidunt.Praesent vulputate sem a libero ultricies, vel vestibulum
+        dolor tincidunt.Praesent vulputate sem a libero ultricies, vel
+        vestibulum dolor tincidunt.
+      </p>
+      <p>
+        Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.
+      </p>
+      <p>
+        Praesent vulputate sem a libero ultricies, vel vestibulum dolor
+        tincidunt.Praesent vulputate sem a libero ultricies, vel vestibulum
+        dolor tincidunt.Praesent vulputate sem a libero ultricies, vel
+        vestibulum dolor tincidunt.Praesent vulputate sem a libero ultricies,
+        vel vestibulum dolor tincidunt.Praesent vulputate sem a libero
+        ultricies, vel vestibulum dolor tincidunt.Praesent vulputate sem a
+        libero ultricies, vel vestibulum dolor tincidunt.Praesent vulputate sem
+        a libero ultricies, vel vestibulum dolor tincidunt.Praesent vulputate
+        sem a libero ultricies, vel vestibulum dolor tincidunt.Praesent
+        vulputate sem a libero ultricies, vel vestibulum dolor
+        tincidunt.Praesent vulputate sem a libero ultricies, vel vestibulum
+        dolor tincidunt.Praesent vulputate sem a libero ultricies, vel
+        vestibulum dolor tincidunt.
+      </p>
+      <p>
+        Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.
+      </p>
+      <p>
+        Praesent vulputate sem a libero ultricies, vel vestibulum dolor
+        tincidunt.Praesent vulputate sem a libero ultricies, vel vestibulum
+        dolor tincidunt.Praesent vulputate sem a libero ultricies, vel
+        vestibulum dolor tincidunt.Praesent vulputate sem a libero ultricies,
+        vel vestibulum dolor tincidunt.Praesent vulputate sem a libero
+        ultricies, vel vestibulum dolor tincidunt.Praesent vulputate sem a
+        libero ultricies, vel vestibulum dolor tincidunt.Praesent vulputate sem
+        a libero ultricies, vel vestibulum dolor tincidunt.Praesent vulputate
+        sem a libero ultricies, vel vestibulum dolor tincidunt.Praesent
+        vulputate sem a libero ultricies, vel vestibulum dolor
+        tincidunt.Praesent vulputate sem a libero ultricies, vel vestibulum
+        dolor tincidunt.Praesent vulputate sem a libero ultricies, vel
+        vestibulum dolor tincidunt.
+      </p>
+      <p>
+        Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.
+      </p>
+      <p>
+        Praesent vulputate sem a libero ultricies, vel vestibulum dolor
+        tincidunt.Praesent vulputate sem a libero ultricies, vel vestibulum
+        dolor tincidunt.Praesent vulputate sem a libero ultricies, vel
+        vestibulum dolor tincidunt.Praesent vulputate sem a libero ultricies,
+        vel vestibulum dolor tincidunt.Praesent vulputate sem a libero
+        ultricies, vel vestibulum dolor tincidunt.Praesent vulputate sem a
+        libero ultricies, vel vestibulum dolor tincidunt.Praesent vulputate sem
+        a libero ultricies, vel vestibulum dolor tincidunt.Praesent vulputate
+        sem a libero ultricies, vel vestibulum dolor tincidunt.Praesent
+        vulputate sem a libero ultricies, vel vestibulum dolor
+        tincidunt.Praesent vulputate sem a libero ultricies, vel vestibulum
+        dolor tincidunt.Praesent vulputate sem a libero ultricies, vel
+        vestibulum dolor tincidunt.
+      </p>
+      <p>
+        Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.
+      </p>
+      <p>
+        Praesent vulputate sem a libero ultricies, vel vestibulum dolor
+        tincidunt.Praesent vulputate sem a libero ultricies, vel vestibulum
+        dolor tincidunt.Praesent vulputate sem a libero ultricies, vel
+        vestibulum dolor tincidunt.Praesent vulputate sem a libero ultricies,
+        vel vestibulum dolor tincidunt.Praesent vulputate sem a libero
+        ultricies, vel vestibulum dolor tincidunt.Praesent vulputate sem a
+        libero ultricies, vel vestibulum dolor tincidunt.Praesent vulputate sem
+        a libero ultricies, vel vestibulum dolor tincidunt.Praesent vulputate
+        sem a libero ultricies, vel vestibulum dolor tincidunt.Praesent
+        vulputate sem a libero ultricies, vel vestibulum dolor
+        tincidunt.Praesent vulputate sem a libero ultricies, vel vestibulum
+        dolor tincidunt.Praesent vulputate sem a libero ultricies, vel
+        vestibulum dolor tincidunt.
+      </p>
+      <p>
+        Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.
+      </p>
+      <p>
+        Praesent vulputate sem a libero ultricies, vel vestibulum dolor
+        tincidunt.Praesent vulputate sem a libero ultricies, vel vestibulum
+        dolor tincidunt.Praesent vulputate sem a libero ultricies, vel
+        vestibulum dolor tincidunt.Praesent vulputate sem a libero ultricies,
+        vel vestibulum dolor tincidunt.Praesent vulputate sem a libero
+        ultricies, vel vestibulum dolor tincidunt.Praesent vulputate sem a
+        libero ultricies, vel vestibulum dolor tincidunt.Praesent vulputate sem
+        a libero ultricies, vel vestibulum dolor tincidunt.Praesent vulputate
+        sem a libero ultricies, vel vestibulum dolor tincidunt.Praesent
+        vulputate sem a libero ultricies, vel vestibulum dolor
+        tincidunt.Praesent vulputate sem a libero ultricies, vel vestibulum
+        dolor tincidunt.Praesent vulputate sem a libero ultricies, vel
+        vestibulum dolor tincidunt.
+      </p>
+      <p>
+        Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.
+      </p>
+      <p>
+        Praesent vulputate sem a libero ultricies, vel vestibulum dolor
+        tincidunt.Praesent vulputate sem a libero ultricies, vel vestibulum
+        dolor tincidunt.Praesent vulputate sem a libero ultricies, vel
+        vestibulum dolor tincidunt.Praesent vulputate sem a libero ultricies,
+        vel vestibulum dolor tincidunt.Praesent vulputate sem a libero
+        ultricies, vel vestibulum dolor tincidunt.Praesent vulputate sem a
+        libero ultricies, vel vestibulum dolor tincidunt.Praesent vulputate sem
+        a libero ultricies, vel vestibulum dolor tincidunt.Praesent vulputate
+        sem a libero ultricies, vel vestibulum dolor tincidunt.Praesent
+        vulputate sem a libero ultricies, vel vestibulum dolor
+        tincidunt.Praesent vulputate sem a libero ultricies, vel vestibulum
+        dolor tincidunt.Praesent vulputate sem a libero ultricies, vel
+        vestibulum dolor tincidunt.
+      </p>
+      <p>
+        Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.Quisque aliquam ligula ac enim condimentum, ut eleifend justo
+        rutrum.
+      </p>
+      <p>
+        Praesent vulputate sem a libero ultricies, vel vestibulum dolor
+        tincidunt.Praesent vulputate sem a libero ultricies, vel vestibulum
+        dolor tincidunt.Praesent vulputate sem a libero ultricies, vel
+        vestibulum dolor tincidunt.Praesent vulputate sem a libero ultricies,
+        vel vestibulum dolor tincidunt.Praesent vulputate sem a libero
+        ultricies, vel vestibulum dolor tincidunt.Praesent vulputate sem a
+        libero ultricies, vel vestibulum dolor tincidunt.Praesent vulputate sem
+        a libero ultricies, vel vestibulum dolor tincidunt.Praesent vulputate
+        sem a libero ultricies, vel vestibulum dolor tincidunt.Praesent
+        vulputate sem a libero ultricies, vel vestibulum dolor
+        tincidunt.Praesent vulputate sem a libero ultricies, vel vestibulum
+        dolor tincidunt.Praesent vulputate sem a libero ultricies, vel
+        vestibulum dolor tincidunt.
+      </p>
+    </div>
+
+    <div id="chat-widget">
+      <div id="chat-messages"></div>
+      <input type="text" id="chat-input" placeholder="Type your message..." />
+    </div>
+
+    <button id="toggle-button">Maximize</button>
+
+    <script>
+      var chatWidget = document.getElementById('chat-widget');
+      var toggleButton = document.getElementById('toggle-button');
+
+      // Function to create a new chat message
+      function createMessage(message, sender) {
+        var messageElement = document.createElement('div');
+        messageElement.textContent = sender + ': ' + message;
+        return messageElement;
+      }
+
+      // Function to handle user input
+      function handleUserInput() {
+        var inputElement = document.getElementById('chat-input');
+        var message = inputElement.value;
+        var messagesElement = document.getElementById('chat-messages');
+
+        // Create and append the user message
+        var userMessage = createMessage(message, 'User');
+        messagesElement.appendChild(userMessage);
+
+        // Clear the input
+        inputElement.value = '';
+
+        // Handle the user message (e.g., send it to a server for processing)
+        // Your code to process the user message goes here
+
+        // Example response from the server
+        var serverResponse = 'This is the response from the server';
+
+        // Create and append the server response
+        var serverMessage = createMessage(serverResponse, 'Server');
+        messagesElement.appendChild(serverMessage);
+
+        // Scroll to the bottom of the chat messages
+        messagesElement.scrollTop = messagesElement.scrollHeight;
+      }
+
+      // Function to toggle the visibility of the chat widget
+      function toggleWidget() {
+        if (chatWidget.style.display === 'none') {
+          chatWidget.style.display = 'block';
+          toggleButton.textContent = 'Minimize';
+        } else {
+          chatWidget.style.display = 'none';
+          toggleButton.textContent = 'Maximize';
+        }
+      }
+
+      // Attach event listeners
+      document
+        .getElementById('chat-input')
+        .addEventListener('keydown', function (event) {
+          if (event.key === 'Enter') {
+            handleUserInput();
+          }
+        });
+
+      toggleButton.addEventListener('click', toggleWidget);
+    </script>
+  </body>
+</html>
